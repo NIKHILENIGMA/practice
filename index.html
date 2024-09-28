@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Waayuvega</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--? Global Cursor -->
+    <div
+      class="cursor w-12 h-12 fixed rounded-full z-10 bg-purple-500 cursor-transition"
+    ></div>
+    <main id="app">
+      <!--? Hero Section -->
+      <section class="Hero-Section w-full h-screen">
+        <div class="h-full w-full relative">
+          <img
+            src="/Images/Hero-section-background.png"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
+      <!--? Marquee (Brands collaboration)  -->
+      <section
+        class="Brand-Marquee-section relative w-full h-[20vh] p-2 bg-[#111]"
+      >
+        <!--@ Left-Blur Effect -->
+        <div
+          class="left-blur absolute top-0 left-20 w-32 h-full bg-gradient-to-r from-[#111] via-[#11 1] to-transparent z-10"
+        ></div>
+
+        <!--@ Right-Blur Effect -->
+        <div
+          class="right-blur absolute top-0 right-20 w-32 h-full bg-gradient-to-r from-transparent via-[#111] to-[#111] z-10"
+        ></div>
+
+        <!--@ Brand-Marquee-wrapper -->
+        <div
+          class="Brand-Marquee-wrapper mx-20 h-full flex space-x-16 overflow-hidden items-center"
+        >
+          <!-- Brand-Marquee-Container -->
+          <div class="Brand-Marquee-Container flex space-x-16 animate-scroll">
+            <img
+              src="/Images/logos/Facebook.png"
+              alt="Brand 1"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/Google.png"
+              alt="Brand 2"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/YouTube.png"
+              alt="Brand 3"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/Pinterest.png"
+              alt="Brand 1"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/Twitch.png"
+              alt="Brand 2"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/Google.png"
+              alt="Brand 3"
+              class="max-w-none h-1/2"
+            />
+          </div>
+          <!-- Brand-Marquee-Container -->
+          <div
+            class="Brand-Marquee-Container flex space-x-16 animate-scroll"
+            aria-hidden="true"
+          >
+            <img
+              src="/Images/logos/Facebook.png"
+              alt="Brand 1"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/Google.png"
+              alt="Brand 2"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/YouTube.png"
+              alt="Brand 3"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/Pinterest.png"
+              alt="Brand 1"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/Twitch.png"
+              alt="Brand 2"
+              class="max-w-none h-1/2"
+            />
+            <img
+              src="/Images/logos/Google.png"
+              alt="Brand 3"
+              class="max-w-none h-1/2"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--? Case Studies -->
+      <section class="Case-Studies-section w-full min-h-[80vh] p-5 bg-[#111]">
+        <div
+          class="Case-Studies-Container flex flex-col items-center gap-6 p-3"
+        >
+          <!--@ Case Studies Header -->
+          <div class="w-full h-[10vh] flex justify-start items-end">
+            <h2
+              class="text-left font-5ormal uppercase text-white text-4xl italic font-serif"
+            >
+              Case Studies
+            </h2>
+          </div>
+          <!--@ Case Content -->
+          <div
+            class="w-full h-[70vh] px-2 py-3 bg-transparent space-y-2 border-white border-y-[1px] border-solid flex flex-col"
+          >
+            <!--@ Case Study 1 -->
+            <div
+              class="Case-Study border-y-[0.5px] border-opacity-35 border-white h-[5vw] flex text-wrap text-white slice-hover"
+              data-img="https://images.unsplash.com/photo-1554866585-cd94860890b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJhbmR8ZW58MHx8MHx8fDA%3D"
+            >
+              <!--@ Brand Name -->
+              <div class="w-[70%] h-full flex items-center px-2">
+                <h2 class="text-3xl font-bold">MOJO</h2>
+              </div>
+
+              <!--@ Brand Type, Location, SVG  -->
+              <div
+                class="w-[30%] h-full flex justify-between px-2 items-center"
+              >
+                <div class="w-[30%]">
+                  <p class="font-thin text-slate-500 uppercase">finance</p>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <h4 class="text-pretty">Togo</h4>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="stroke-slate-300 fill-slate-50 w-10 h-10 stroke-1"
+                    viewBox="-2 -2 25 25"
+                  >
+                    <path
+                      d="M10.044 20.087A10.044 10.044 0 1 0 0 10.043a10.044 10.044 0 0 0 10.044 10.044zM8.534 8.193l1.4-4.313 1.4 4.313h4.533L12.2 10.858l1.4 4.312-3.666-2.665-3.666 2.665 1.4-4.312L4 8.193z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--@ Case Study 2  -->
+            <div
+              class="Case-Study border-y-[0.5px] border-opacity-35 border-white h-[5vw] flex text-wrap text-white"
+              data-img="https://images.unsplash.com/photo-1725347740936-4ce8cbb09584?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YnJhbmRpbmclMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
+            >
+              <div class="w-[70%] h-full flex items-center px-2">
+                <h2 class="text-3xl font-bold">MOJO</h2>
+              </div>
+              <div
+                class="w-[30%] h-full flex justify-between px-2 items-center"
+              >
+                <div class="w-[30%]">
+                  <p class="font-thin text-slate-500 uppercase">finance</p>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <h4 class="text-pretty">Kuwait</h4>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    class="w-10 h-10"
+                  >
+                    <path
+                      class="stroke-1 stroke-white"
+                      d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                      data-name="Right"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--@ Case Study 3  -->
+            <div
+              class="Case-Study border-y-[0.5px] border-opacity-35 border-white h-[5vw] flex text-wrap text-white"
+              data-img="https://plus.unsplash.com/premium_photo-1663100678842-d89cb7b084ee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJyYW5kaW5nJTIwZGVzaWdufGVufDB8fDB8fHww"
+            >
+              <div class="w-[70%] h-full flex items-center px-2">
+                <h2 class="text-3xl font-bold">MOJO</h2>
+              </div>
+              <div
+                class="w-[30%] h-full flex justify-between px-2 items-center"
+              >
+                <div class="w-[30%]">
+                  <p class="font-thin text-slate-500 uppercase">finance</p>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <h4 class="text-pretty">Senegal</h4>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    class="w-10 h-10"
+                  >
+                    <path
+                      class="stroke-1 stroke-white"
+                      d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                      data-name="Right"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--@ Case Study 4  -->
+            <div
+              class="Case-Study border-y-[0.5px] border-opacity-35 border-white h-[5vw] flex text-wrap text-white"
+              data-img="https://images.unsplash.com/photo-1603906835814-485c98f7b4f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym90dGxlJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D"
+            >
+              <div class="w-[70%] h-full flex items-center px-2">
+                <h2 class="text-3xl font-bold">MOJO</h2>
+              </div>
+              <div
+                class="w-[30%] h-full flex justify-between px-2 items-center"
+              >
+                <div class="w-[30%]">
+                  <p class="font-thin text-slate-500 uppercase">finance</p>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <h4 class="text-pretty">Herzegovina</h4>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    class="w-10 h-10"
+                  >
+                    <path
+                      class="stroke-1 stroke-white"
+                      d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                      data-name="Right"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--@ Case Study 5 -->
+            <div
+              class="Case-Study border-y-[0.5px] border-opacity-35 border-white h-[5vw] flex text-wrap text-white"
+              data-img="https://images.unsplash.com/photo-1603906835814-485c98f7b4f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Ym90dGxlJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D"
+            >
+              <div class="w-[70%] h-full flex items-center px-2">
+                <h2 class="text-3xl font-bold">MOJO</h2>
+              </div>
+              <div
+                class="w-[30%] h-full flex justify-between px-2 items-center"
+              >
+                <div class="w-[30%]">
+                  <p class="font-thin text-slate-500 uppercase">finance</p>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <h4 class="text-pretty">Algeria</h4>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    class="w-10 h-10"
+                  >
+                    <path
+                      class="stroke-1 stroke-white"
+                      d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                      data-name="Right"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--@ Case Study 6  -->
+            <div
+              class="Case-Study border-y-[0.5px] border-opacity-35 border-white h-[5vw] flex text-wrap text-white"
+              data-img="https://images.unsplash.com/photo-1631087606988-a6be38fccaf6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2hvZXMlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D"
+            >
+              <div class="w-[70%] h-full flex items-center px-2">
+                <h2 class="text-3xl font-bold">MOJO</h2>
+              </div>
+              <div
+                class="w-[30%] h-full flex justify-between px-2 items-center"
+              >
+                <div class="w-[30%]">
+                  <p class="font-thin text-slate-500 uppercase">finance</p>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <h4 class="text-pretty">Micronesia</h4>
+                </div>
+                <div class="w-[30%] flex justify-end">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 25 25"
+                    class="w-10 h-10"
+                  >
+                    <path
+                      class="stroke-1 stroke-white"
+                      d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                      data-name="Right"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--? What we do? -->
+      <section class="What-We-Do-section w-full min-h-screen bg-[#111] p-4">
+        <!--@ Heading  -->
+        <div class="What-We-Do-Container w-full py-10">
+          <h1
+            class="text-[7rem] text-white font-medium font-['Lora'] px-3 uppercase"
+          >
+            what we do ?
+          </h1>
+        </div>
+
+        <!--@ Brand -->
+        <div
+          class="w-full min-h-screen bg-[#111] p-6 flex justify-center gap-3"
+        >
+          <!--@ Branding -->
+          <div
+            class="bg-fuchsia-500 w-[50%] h-[90vh] overflow-hidden rounded-3xl"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+              alt="img"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div
+            class="relative top-0 glass w-[40%] h-full rounded-2xl p-5 flex items-center flex-col space-y-3"
+          >
+            <h2
+              class="w-full p-4 text-white font-['Lora'] font-bold uppercase text-4xl"
+            >
+              Branding
+            </h2>
+
+            <!--@ Drop Down 1 -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Brand Identity Creation
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Our team excels in crafting unique and compelling brand
+                  identities that resonate with your target audience. We delve
+                  deep into understanding your business values, mission, and
+                  vision to create a cohesive and memorable brand image. From
+                  logo design to color schemes and typography, every element is
+                  meticulously designed to ensure your brand stands out in a
+                  crowded marketplace.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 2  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Brand Communication Strategies
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Effective communication is the cornerstone of a successful
+                  brand. We develop strategic communication plans that convey
+                  your brand's message clearly and consistently across all
+                  channels. Our approach ensures that your brand voice is not
+                  only heard but also remembered, fostering strong connections
+                  with your audience and driving engagement.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 3  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Brand Collaterals
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  We create high-quality brand collaterals that reinforce your
+                  brand identity and enhance your marketing efforts. Whether
+                  it's business cards, brochures, or digital assets, our designs
+                  are tailored to reflect your brand's personality and values.
+                  Our goal is to provide you with tools that leave a lasting
+                  impression and support your business growth.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 4  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Packaging Design
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Packaging is more than just a container for your product; it's
+                  an integral part of your brand experience. Our innovative
+                  packaging designs not only protect your product but also
+                  captivate and delight your customers. We focus on creating
+                  visually appealing and functional packaging that aligns with
+                  your brand identity and stands out on the shelves.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--@ Digital Marketing -->
+        <div
+          class="w-full min-h-screen bg-[#111] p-6 flex flex-row-reverse justify-center gap-3"
+        >
+          <div class="w-[50%] h-[90vh] overflow-hidden rounded-3xl">
+            <img
+              src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+              alt="img"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div
+            class="w-[40%] glass h-full rounded-2xl p-5 flex items-center flex-col space-y-3"
+          >
+            <h2
+              class="w-full p-4 text-white font-['Lora'] font-bold uppercase text-4xl"
+            >
+              Digital Marketing Solutions
+            </h2>
+
+            <!--@ Drop Down 1-->
+            <div
+              class="collabs w-full p-4 rounded-lg shadow-md cursor-pointer bg-white/10"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Digital Strategy
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Our digital strategy services are tailored to align with your
+                  business goals and objectives. We conduct thorough market
+                  research and competitor analysis to develop a robust digital
+                  roadmap that maximizes your online potential. Our strategies
+                  are data-driven, ensuring that every decision is backed by
+                  insights and analytics to achieve optimal results.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 2  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Campaign Planning & Execution
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  We specialize in crafting and executing high-impact digital
+                  campaigns that capture attention and drive engagement. Our
+                  team meticulously plans every aspect of your campaign, from
+                  concept development to implementation, ensuring seamless
+                  execution across all digital channels. We monitor and optimize
+                  campaigns in real-time to ensure maximum ROI and continuous
+                  improvement.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 3  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Content Creation
+
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-black">
+                  Content is king in the digital realm, and our content creation
+                  services are designed to captivate and convert. Whether it's
+                  compelling blog posts, engaging social media content, or
+                  informative videos, our creative team produces high-quality
+                  content that aligns with your brand voice and resonates with
+                  your audience. We focus on storytelling that not only informs
+                  but also inspires action.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 4  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Influencer Marketing
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-slate-200">
+                  Leverage the power of influencer marketing to amplify your
+                  brand's reach and credibility. We connect you with influential
+                  personalities who can authentically promote your products and
+                  services to their dedicated followers. Our influencer
+                  marketing strategies are carefully curated to ensure alignment
+                  with your brand values and objectives, resulting in genuine
+                  and impactful endorsements.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--@ Packaging  -->
+        <div
+          class="w-full min-h-screen bg-[#111] p-6 flex justify-center gap-3"
+        >
+          <!--@ Branding -->
+          <div class="w-[50%] h-[90vh] overflow-hidden rounded-3xl">
+            <img
+              src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+              alt="img"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div
+            class="w-[40%] h-full rounded-2xl p-5 flex items-center flex-col space-y-3"
+          >
+            <h2
+              class="w-full p-4 text-white font-['Lora'] font-bold uppercase text-4xl"
+            >
+              Packaging
+            </h2>
+
+            <!--@ Drop Down 1 -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Label Design
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Our label design services ensure that your product stands out
+                  on the shelves. We create visually appealing and informative
+                  labels that not only comply with industry standards but also
+                  capture the essence of your brand. Our designs are tailored to
+                  attract your target audience and communicate your product's
+                  unique selling points effectively.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 2  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Carton/Bottle Design
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  We specialize in designing cartons and bottles that are both
+                  functional and aesthetically pleasing. Our team considers
+                  every aspect of the design process, from material selection to
+                  structural integrity, ensuring that your packaging is durable
+                  and visually striking. Whether you need a sleek bottle design
+                  or a robust carton, we deliver solutions that enhance your
+                  product's appeal.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 3  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Graphic Assets
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Our graphic assets are designed to complement your packaging
+                  and reinforce your brand identity. From icons and
+                  illustrations to patterns and textures, we provide a range of
+                  graphic elements that can be used across various packaging
+                  formats. These assets are created to be versatile and
+                  cohesive, ensuring a consistent brand experience.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 4  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Pack
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Our comprehensive packaging solutions cover everything from
+                  initial concept to final production. We work closely with you
+                  to understand your needs and deliver packaging that not only
+                  protects your product but also enhances its marketability. Our
+                  goal is to create packaging that is both practical and
+                  visually appealing, ensuring your product makes a strong
+                  impression.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--@ Websites  -->
+        <div
+          class="w-full min-h-screen bg-[#111] p-6 flex flex-row-reverse justify-center gap-3"
+        >
+          <div class="w-[50%] h-[90vh] overflow-hidden rounded-3xl">
+            <img
+              src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+              alt="img"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <!--@ Drop Down 1  -->
+          <div
+            class="w-[40%] h-full rounded-2xl p-5 flex items-center flex-col space-y-3"
+          >
+            <h2
+              class="w-full p-4 text-white font-['Lora'] font-bold uppercase text-4xl"
+            >
+              Branding
+            </h2>
+
+            <!--@ Drop Down 1 -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Web Design
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Our clients' success stories are a testament to our dedication
+                  and expertise in the digital marketing realm. From innovative
+                  web design and development to strategic SEO and comprehensive
+                  analytics, we have empowered numerous businesses to achieve
+                  their goals.!
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 2  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Web Development
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Our tailored strategies and creative solutions have not only
+                  enhanced their online presence but also driven significant
+                  growth and engagement. Discover how our passionate team has
+                  made a difference in their digital journeys. Join the ranks of
+                  our satisfied clients and experience the transformative power
+                  of our services!
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 3  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Analytics
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  We create high-quality brand collaterals that reinforce your
+                  brand identity and enhance your marketing efforts. Whether
+                  it's business cards, brochures, or digital assets, our designs
+                  are tailored to reflect your brand's personality and values.
+                  Our goal is to provide you with tools that leave a lasting
+                  impression and support your business growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--@ Video Production  -->
+        <div
+          class="w-full min-h-screen bg-[#111] p-6 flex justify-center gap-3"
+        >
+          <!--@ Branding -->
+          <div class="w-[50%] h-[90vh] overflow-hidden rounded-3xl">
+            <img
+              src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+              alt="img"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div
+            class="w-[40%] h-full rounded-2xl p-5 flex items-center flex-col space-y-3"
+          >
+            <h2
+              class="w-full p-4 text-white font-['Lora'] font-bold uppercase text-4xl"
+            >
+              Video Production
+            </h2>
+
+            <!--@ Drop Down 1-->
+            <div
+              class="collabs w-full p-4 bg-white rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-black flex justify-between items-center"
+              >
+                TV
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-black">
+                  Deliver broadcast-ready TV commercials and programs that
+                  captivate and engage audiences. We streamline the entire
+                  process, from scripting to final edit, ensuring your brand
+                  shines on screen with high-impact visuals and storytelling.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 2  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Digital Films
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Expertly crafted digital films designed to thrive across
+                  platforms. Whether for web series, branded content, or
+                  promotional videos, our team moves quickly to produce
+                  cinematic experiences that leave a lasting impression, helping
+                  you connect with your digital audience effortlessly.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 3  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Photography & Videography
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Capture moments that matter. Our skilled photographers and
+                  videographers work with speed and precision to deliver
+                  stunning visual content that enhances your brand narrative,
+                  whether for corporate events, social media, or product shoots.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 4  -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                3D | Animation
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Elevate your message with cutting-edge 3D and animation
+                  services. From sleek motion graphics to detailed 3D
+                  visualizations, our team brings your vision to life with
+                  efficiency and flair, creating visually striking content that
+                  grabs attention and delivers your message with clarity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--@ Music Production  -->
+        <div
+          class="w-full min-h-screen bg-[#111] p-6 flex flex-row-reverse justify-center gap-3"
+        >
+          <!--@ Branding -->
+          <div class="w-[50%] h-[90vh] overflow-hidden rounded-3xl">
+            <img
+              src="https://images.unsplash.com/photo-1512374382149-233c42b6a83b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c2hvZXN8ZW58MHx8MHx8fDA%3D"
+              alt="img"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div
+            class="w-[40%] h-full rounded-2xl p-5 flex items-center flex-col space-y-3"
+          >
+            <h2
+              class="w-full p-4 text-white font-['Lora'] font-bold uppercase text-4xl"
+            >
+              Song Production
+            </h2>
+
+            <!--@ Drop Down 1 -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Dubbing
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Efficient, precise dubbing services that align with your
+                  project's voice, from advertisements to films. Our experienced
+                  team ensures perfect synchronization, delivering clear,
+                  engaging audio that elevates your visual content.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 2 -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Sound Design
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  We bring your project to life with custom soundscapes that
+                  evoke emotion and enhance the listener's experience. Our
+                  innovative approach ensures that each sound is crafted with
+                  precision and tailored for maximum impact, whether it’s for
+                  digital campaigns, apps, or media productions.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 3 -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Sound Identity Music
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  Create a distinct and memorable audio identity for your brand.
+                  We specialize in crafting unique sound logos and themes that
+                  speak directly to your audience, making your brand instantly
+                  recognizable through audio.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 4 -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Sound Design
+
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white">
+                  We bring your project to life with custom soundscapes that
+                  evoke emotion and enhance the listener's experience. Our
+                  innovative approach ensures that each sound is crafted with
+                  precision and tailored for maximum impact, whether it’s for
+                  digital campaigns, apps, or media productions.
+                </p>
+              </div>
+            </div>
+
+            <!--@ Drop Down 5 -->
+            <div
+              class="collabs w-full p-4 bg-white/10 rounded-lg shadow-md cursor-pointer"
+              onclick="toggleCollabs(this)"
+            >
+              <h2
+                class="text-2xl font-bold text-white flex justify-between items-center"
+              >
+                Background Score
+
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h2>
+              <div class="collabs-content mt-4">
+                <p class="text-white/50">
+                  We produce powerful and emotive background scores that
+                  perfectly complement your visual content. Whether it's for
+                  films, ads, or video content, our background scores add depth
+                  and atmosphere, amplifying the story you want to tell.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--? Testimonials  -->
+      <section class="Testimonials w-full min-h-screen bg-black p-5">
+        <div
+          class="Testimonials-Container w-full h-full py-12 flex flex-col justify-center items-center gap-4"
+        >
+          <!--@ Testimonals  -->
+          <div
+            class="Testimoal-wrapper w-full min-h-screen flex justify-between p-4 gap-4"
+          >
+            <div class="sticky-title w-1/3 p-3">
+              <div class="sticky top-10">
+                <div
+                  class="w-full h-[10vh] flex items-end border-b-[1px] border-[#dadada] p-2"
+                >
+                  <h1 class="text-md text-white font-medium font-['Lora'] p-4">
+                    Testimonials
+                  </h1>
+                </div>
+                <div class="w-full h-[40vh] flex flex-col items-end p-4">
+                  <div class="w-full">
+                    <h2 class="text-4xl text-white font-bold text-wrap">
+                      Hear What Our Thrilled Clients Have to Say About Our
+                      Game-Changing Services!
+                    </h2>
+                  </div>
+                  <div class="p-1 text-xs relative top-20 text-slate-400/80">
+                    <p>
+                      Discover the transformative impact of our cutting-edge
+                      digital marketing solutions through the voices of our
+                      satisfied clients. From captivating video productions and
+                      crystal-clear audio services to innovative web development
+                      and dynamic social media strategies, our clients rave
+                      about the results. Our comprehensive offline marketing
+                      campaigns have also left a lasting impression. Dive into
+                      their stories and see how we've helped businesses like
+                      yours achieve unparalleled success!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sticky-reviews relative top-10 w-2/3 p-4">
+              <!--@ Review 1 -->
+              <div
+                class="p-2 w-full min-h-[30%] border-b-[1px] border-[#dadadaab]"
+              >
+                <div class="w-full py-2">
+                  <p class="text-white font-medium flex justify-start text-xs">
+                    /01
+                  </p>
+                </div>
+                <div class="w-full flex justify-start">
+                  <h2 class="text-xl font-semibold font-['Lora'] text-white">
+                    Working with this digital marketing team has been a
+                    game-changer for our business. Their innovative video
+                    content and strategic social media campaigns have
+                    significantly boosted our online presence. The team's
+                    dedication and creativity are unmatched, and we couldn't be
+                    happier with the results. Highly recommend their services!
+                  </h2>
+                </div>
+                <div class="w-full h-20 flex justify-start my-4">
+                  <div class="w-[20%] h-full flex justify-center items-center">
+                    <div class="w-20 h-20 rounded-full overflow-hidden">
+                      <img
+                        src="https://plus.unsplash.com/premium_photo-1670884522719-d7f4bcdfcbeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGNlb3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="profile-1"
+                        class="object-cover w-full h-full object-left-top"
+                      />
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="w-[80%] h-full flex flex-col justify-center items-start text-white"
+                  >
+                    <h2 class="text-xl uppercase font-normal">Emily Johnson</h2>
+                    <p class="text-xs font-light">
+                      Marketing Director at Green Earth Solutions
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--@ Review 2 -->
+              <div
+                class="p-4 w-full min-h-[30%] border-b-[1px] border-[#dadadaab]"
+              >
+                <div class="w-full py-4">
+                  <p class="text-white font-medium flex justify-start text-xs">
+                    /02
+                  </p>
+                </div>
+                <div class="w-full flex justify-start">
+                  <h2 class="text-xl font-semibold font-['Lora'] text-white">
+                    Their expertise in web development and offline marketing has
+                    truly set us apart from our competitors. The website they
+                    designed for us is not only visually stunning but also
+                    highly functional and user-friendly. Their offline marketing
+                    strategies have also helped us reach a broader audience. The
+                    team's energy and passion are evident in everything they do.
+                  </h2>
+                </div>
+                <div class="w-full h-20 flex justify-start my-4">
+                  <div class="w-[20%] h-full flex justify-center items-center">
+                    <div class="w-20 h-20 rounded-full overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/photo-1543132220-4bf3de6e10ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fGNlb3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="profile-1"
+                        class="object-cover w-full h-full object-left-top"
+                      />
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="w-[80%] h-full flex flex-col justify-center items-start text-white"
+                  >
+                    <h2 class="text-xl uppercase font-normal">Lora Smith</h2>
+                    <p class="text-xs font-light">
+                      CEO of Tech Innovators Inc.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--@ Review 3 -->
+              <div
+                class="p-4 w-full min-h-[30%] border-b-[1px] border-[#dadadaab]"
+              >
+                <div class="w-full py-4">
+                  <p class="text-white font-medium flex justify-start text-xs">
+                    /03
+                  </p>
+                </div>
+                <div class="w-full flex justify-start">
+                  <h2 class="text-xl font-semibold font-['Lora'] text-white">
+                    I was blown away by the quality of the audio and video
+                    production services provided. They captured the essence of
+                    our brand perfectly and helped us connect with our audience
+                    on a deeper level. Their social media marketing strategies
+                    have also been incredibly effective. The team's enthusiasm
+                    and professionalism made the entire process enjoyable and
+                    rewarding.
+                  </h2>
+                </div>
+                <div class="w-full h-20 flex justify-start my-4">
+                  <div class="w-[20%] h-full flex justify-center items-center">
+                    <div class="w-20 h-20 rounded-full overflow-hidden">
+                      <img
+                        src="https://images.unsplash.com/flagged/photo-1553642618-de0381320ff3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fGNlb3xlbnwwfHwwfHx8MA%3D%3D"
+                        alt="profile-1"
+                        class="object-cover w-full h-full object-left-top"
+                      />
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="w-[80%] h-full flex flex-col justify-center items-start text-white"
+                  >
+                    <h2 class="text-xl uppercase font-normal">Michael Brown</h2>
+                    <p class="text-xs font-light">
+                      Founder of Urban Beats Music
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--? Marquee (Let chat)-->
+      <section
+        class="Chat-Marquee-section w-full flex justify-center h-[25vh] bg-[#111] relative"
+      >
+        <!--@ Left-Blur Effect -->
+        <div
+          class="left-blur absolute top-0 left-24 w-[10vw] h-full bg-gradient-to-r from-[#111] via-[#111] to-transparent z-10"
+        ></div>
+
+        <!--@ Right-Blur Effect -->
+        <div
+          class="right-blur absolute top-0 right-24 w-[10vw] h-full bg-gradient-to-r from-transparent via-[#111] to-[#111] z-10"
+        ></div>
+        <div
+          class="Chat-Marquee-Container w-[90%] h-full flex items-center justify-center"
+        >
+          <div
+            class="Chat-Marquee-wrapper mx-20 h-full flex space-x-16 overflow-hidden items-center"
+          >
+            <!-- Chat-Marquee-Container -->
+            <div
+              class="Chat-Marquee-Container flex text-nowrap space-x-20 animate-scroll"
+            >
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat 1
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 text-white sticky top-5 animate-spin ease-in"
+              />
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat 2
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 text-white sticky top-5 animate-spin ease-in"
+              />
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat 3
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 bg-pink-600 text-white sticky top-5 animate-spin ease-in"
+              />
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat 4
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 text-white sticky top-5 animate-spin ease-in"
+              />
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat 5
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 mr-10 text-white sticky top-5 animate-spin ease-in"
+              />
+            </div>
+            <!-- Chat-Marquee-Container -->
+            <div
+              class="Chat-Marquee-Container flex text-nowrap space-x-16 animate-scroll"
+              aria-hidden="true"
+            >
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 text-white sticky top-5 animate-spin ease-in"
+              />
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 text-white sticky top-5 animate-spin ease-in"
+              />
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 text-white sticky top-5 animate-spin ease-in"
+              />
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 text-white sticky top-5 animate-spin ease-in"
+              />
+              <li
+                class="list-none text-5xl uppercase font-semibold flex items-center text-white"
+              >
+                Let's Chat
+              </li>
+              <img
+                src="/star.svg"
+                alt="star-svg"
+                class="w-8 h-8 text-white sticky top-5 animate-spin ease-in"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--? FAQ -->
+      <section class="FAQ-section w-full min-h-[50vh] bg-[#111]">
+        <div class="FAQ-Container flex justify-center">
+          <div class="FAQ-Container w-[50%] p-6">
+            <h2 class="text-3xl font-bold text-white mb-4">
+              Frequently Asked Questions
+            </h2>
+            <!--@ FAQ 1  -->
+            <div
+              class="faq-item bg-white/10 p-4 mb-2 rounded-lg cursor-pointer"
+              onclick="toggleFaq(this)"
+            >
+              <h3
+                class="text-xl font-semibold text-white flex justify-between items-center"
+              >
+                What services do you offer?
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h3>
+              <div class="faq-content mt-2 hidden">
+                <p class="text-white/70">
+                  We offer a wide range of services including video production,
+                  music production, digital marketing, and more.
+                </p>
+              </div>
+            </div>
+
+            <!--@ FAQ 2  -->
+            <div
+              class="faq-item bg-white/10 p-4 mb-2 rounded-lg cursor-pointer"
+              onclick="toggleFaq(this)"
+            >
+              <h3
+                class="text-xl font-semibold text-white flex justify-between items-center"
+              >
+                How can I contact you?
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h3>
+              <div class="faq-content mt-2 hidden">
+                <p class="text-white/70">
+                  You can contact us via email or phone. Our contact details are
+                  provided in the 'Let’s Talk' section.
+                </p>
+              </div>
+            </div>
+
+            <!--@ FAQ 3  -->
+            <div
+              class="faq-item bg-white/10 p-4 mb-2 rounded-lg cursor-pointer"
+              onclick="toggleFaq(this)"
+            >
+              <h3
+                class="text-xl font-semibold text-white flex justify-between items-center"
+              >
+                What is your pricing model?
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h3>
+              <div class="faq-content mt-2 hidden">
+                <p class="text-white/70">
+                  Our pricing model varies depending on the service and project
+                  requirements. Please contact us for a detailed quote.
+                </p>
+              </div>
+            </div>
+
+            <!--@ FAQ 4  -->
+            <div
+              class="faq-item bg-white/10 p-4 mb-2 rounded-lg cursor-pointer"
+              onclick="toggleFaq(this)"
+            >
+              <h3
+                class="text-xl font-semibold text-white flex justify-between items-center"
+              >
+                Do you offer custom solutions?
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h3>
+              <div class="faq-content mt-2 hidden">
+                <p class="text-white font-light">
+                  Yes, we offer custom solutions tailored to meet your specific
+                  needs and goals. Our team will work closely with you to
+                  develop a strategy that aligns with your vision.
+                </p>
+              </div>
+            </div>
+
+            <!--@ FAQ 5  -->
+            <div
+              class="faq-item bg-white/10 p-4 mb-2 rounded-lg cursor-pointer"
+              onclick="toggleFaq(this)"
+            >
+              <h3
+                class="text-xl font-semibold text-white flex justify-between items-center"
+              >
+                How long does it take to complete a project?
+                <span class="arrow inline-block"
+                  ><img src="/down-arrow.svg" alt="down-arrow" class="w-5 h-5"
+                /></span>
+              </h3>
+              <div class="faq-content mt-2 hidden">
+                <p class="text-white font-light">
+                  The timeline for each project varies depending on the scope
+                  and complexity of the work. We will provide you with a
+                  detailed project plan and timeline before starting the
+                  project.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--? Have Project in Mind? -->
+      <section
+        class="Project-In-Mind-section relative w-full h-[80vh] py-3 bg-[#111]"
+      >
+        <div
+          class="Project-In-Mind-Container w-full h-full flex items-center"
+        >
+          <div class="view-img w-full h-[70%]">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1675817278510-016473c9c594?q=80&w=1915&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="idea cover"
+              class=" w-full h-[99%] object-cover opacity-50"
+            />
+          </div>
+        </div>
+
+        <div class="inner-text absolute top-[60%] left-5 w-2/4">
+          <h1 class="text-white font-extrabold text-6xl text-wrap">
+            Do you have any project idea in mind?
+          </h1>
+        </div>
+        <!--@ Project-In-Mind-Content -->
+      </section>
+
+      <!--? Let talk form -->
+      <section class="Let-Talk-section w-full h-[59vw] bg-[#111] p-6">
+        <div
+          class="Let-Talk-Container grid grid-rows-3 grid-cols-2 h-screen gap-3"
+        >
+          <!--@ Contact Form -->
+          <div
+            class="col-span-1 row-span-3 rounded-3xl px-4 py-7 bg-white shadow-md shadow-white/55"
+          >
+            <div class="heading flex justify-start my-1">
+              <h3 class="text-orange-400 font-medium text-start">
+                Get in Touch
+              </h3>
+            </div>
+
+            <!--@ Title -->
+            <div class="title flex justify-start py-1">
+              <h1 class="text-5xl font-bold">Let's Chat, Reach Out to Us</h1>
+            </div>
+
+            <!--@ Description  -->
+            <div class="description border-b-[1px] py-1">
+              <p class="text-slate-500/90 font-light">
+                Have question or feedback? We're here to help. Send us a message
+                and we will respond within 24 hours
+              </p>
+            </div>
+
+            <!--@ Form -->
+            <div class="form">
+              <form>
+                <div class="flex justify-between w-full py-2">
+                  <!--@ First Name Field  -->
+                  <div class="w-1/2 flex flex-col py-1 mr-2">
+                    <label for="first-name" class="font-medium text-black"
+                      >First Name
+                    </label>
+                    <input
+                      type="text"
+                      id="first-name"
+                      autocomplete="off"
+                      placeholder="First name"
+                      class="p-3 bg-slate-300/40 placeholder:text-slate-600 w-full rounded-xl"
+                    />
+                  </div>
+                  <!--@ Last Name Field  -->
+                  <div class="w-1/2 flex flex-col py-1 ml-1">
+                    <label for="last-name" class="font-medium text-black"
+                      >Last Name
+                    </label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      autocomplete="off"
+                      placeholder="Last name"
+                      class="p-3 bg-slate-300/40 placeholder:text-slate-600 w-full rounded-xl"
+                    />
+                  </div>
+                </div>
+
+                <!--@ Email Field  -->
+                <div class="flex flex-col justify-start">
+                  <label for="email" class="font-medium text-black"
+                    >Email Address:
+                  </label>
+                  <input
+                    type="text"
+                    id="email"
+                    autocomplete="off"
+                    placeholder="Company Email"
+                    class="p-3 bg-slate-300/40 placeholder:text-slate-600 w-full rounded-xl"
+                  />
+                </div>
+
+                <!--@ Company Name Field  -->
+                <div class="flex flex-col justify-start my-1">
+                  <label for="company-name" class="font-medium text-black"
+                    >Company Name</label
+                  >
+                  <input
+                    type="text"
+                    id="company-name"
+                    placeholder="Company Name"
+                    class="p-3 bg-slate-300/40 placeholder:text-slate-600 w-full rounded-xl"
+                  />
+                </div>
+
+                <!--@ Message Field  -->
+                <div class="flex flex-col justify-start my-1">
+                  <label for="message" class="font-medium text-black"
+                    >Message</label
+                  >
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Leave us message..."
+                    rows="4"
+                    cols="3"
+                    class="p-3 bg-slate-300/40 placeholder:text-slate-600 w-full rounded-xl"
+                  ></textarea>
+                </div>
+                <div class="flex justify-start gap-3 px-2">
+                  <input
+                    type="checkbox"
+                    id="policy"
+                    name="policy"
+                    class="w-4 px-2 my-2"
+                  />
+                  <label for="policy"
+                    >I agree to our friendly
+                    <span class="underline">privacy policy</span></label
+                  >
+                </div>
+                <button
+                  type="submit"
+                  class="px-7 py-2 bg-black text-wrap text-white rounded-lg"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <!--@ Image  -->
+          <div
+            class="hidden sm:col-span-2 md:grid lg:col-span-1 lg:row-span-2 rounded-3xl overflow-hidden bg-white"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1654708825908-e83b49ea9239?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBlcnNvbiUyMG9uJTIwcGhvbmV8ZW58MHx8MHx8fDA%3D"
+              alt="person"
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+
+          <!--@ Email and phone no -->
+          <div class="col-span-1 row-span-1 rounded-3xl p-5 bg-white">
+            <div class="flex justify-center items-center flex-col">
+              <div
+                class="w-[80%] bg-slate-400/20 flex justify-center items-center p-2 my-2"
+              >
+                <div
+                  class="w-[3.5vw] h-[3vw] flex justify-center items-center m-1 mr-2"
+                >
+                  <img
+                    src="/email.svg"
+                    alt="email-icon"
+                    class="w-full h-full object-cover to-blue-500"
+                  />
+                </div>
+                <div class="w-full">
+                  <h2 class="text-slate-900 font-semibold">Email</h2>
+                  <p class="text-slate-900/75">contact@waayuvega.com</p>
+                </div>
+              </div>
+              <div
+                class="w-[80%] bg-slate-400/20 flex justify-center items-center p-2 my-2"
+              >
+                <div
+                  class="w-[3.5vw] h-[3vw] flex justify-center items-center m-1 mr-2"
+                >
+                  <img
+                    src="/phone.svg"
+                    alt="email-icon"
+                    class="w-full h-full object-cover"
+                  />
+                </div>
+                <div class="w-full">
+                  <h2 class="text-slate-900 font-semibold">Phone</h2>
+                  <p class="text-slate-900/75">000000000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="w-full min-h-[40vh] bg-[#111] p-6 text-white">
+      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <!-- Footer Logo -->
+      <div class="mb-4 md:mb-0">
+        <h2 class="text-2xl text-wrap text-white">
+          Waayuvega
+        </h2>
+        <!-- <img src="/logo.svg" alt="Company Logo" class="w-32 h-auto"> -->
+      </div>
+      <!-- Footer Navigation -->
+      <div class="flex flex-col md:flex-row gap-4">
+        <a href="#home" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">About Us</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+      <!-- Social Media Links -->
+      <div class="flex gap-4 mt-4 md:mt-0">
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+        <img src="/facebook.svg" alt="Facebook" class="w-6 h-6">
+        </a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <img src="/whats-app.svg" alt="Twitter" class="w-6 h-6">
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+        <img src="https://www.svgrepo.com/show/419930/instagram-socials-social-media-icon.svg" alt="Instagram" class="w-6 h-6 bg-white">
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <img src="/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
+        </a>
+      </div>
+      </div>
+      <div class="text-center mt-6">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

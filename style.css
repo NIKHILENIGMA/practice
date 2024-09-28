@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  cursor: none;
+}
+
+.cursor-transition {
+  /* transition: all linear ease 0.5s; */
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: difference;
+}
+
+.stick-card{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px !important;
+  z-index: 1000;
+}
+
+.collabs-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.glass {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);  
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
